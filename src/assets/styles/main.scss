@@ -1,0 +1,178 @@
+html {
+  scroll-behavior: smooth;
+  background-color: #eef0f4;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  -webkit-text-size-adjust: none;
+  padding: 0;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+img,
+input {
+  border: none;
+  vertical-align: middle;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+input,
+textarea {
+  /* webkit浏览器 */
+  -webkit-user-select: auto;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  width: 100%;
+}
+
+/* 去除搜索框默认的× */
+
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  /* 此处只是去掉默认的小× */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+pre {
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+
+.hover-hand {
+  cursor: pointer;
+}
+
+.hover-move {
+  cursor: move;
+}
+
+.tx-c {
+  text-align: center;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+
+.nocopy {
+  /* 系统默认菜单被禁用 */
+  -webkit-touch-callout: none;
+  /* webkit浏览器 */
+  -webkit-user-select: none;
+  /* 早起浏览器 */
+  -khtml-user-select: none;
+  /* 火狐浏览器 */
+  -moz-user-select: none;
+  /* IE浏览器 */
+  -ms-user-select: none;
+  /* 用户是否能够选中文本 */
+  user-select: none;
+}
+
+/* 扩展点击区域 */
+.extend-click {
+  position: relative;
+}
+
+.extend-click:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+}
+
+/* 占位隐藏 */
+.v-hide {
+  visibility: hidden;
+}
+
+/* 划线 */
+.scribe {
+  text-decoration: line-through;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  background-color: #f2f5f7;
+  min-height: 100vh;
+}
+
+.noclick {
+  pointer-events: none;
+}
+:root:root {
+  .adm-center-popup {
+    --min-width: 300px !important;
+  }
+}

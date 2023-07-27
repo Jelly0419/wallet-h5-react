@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>跳转中</title>
+</head>
+<body>
+  <!-- 
+    为了解决问题：调起H5支付报"商家参数格式有误，请联系商家解决"
+    微信H5支付会先跳转到这个页面，然后再唤醒微信
+  -->
+
+  <script>
+    function getValue(text){
+      var search = window.location.search.slice(1).split('&');
+      var value = '';
+      for(var i=0;i<search.length;i++){
+          var left = text + '=';
+            if(search[i].indexOf(left) === 0){
+                var right = search[i].slice(left.length);
+                if(right){
+                    value = right;
+                }
+            }
+      }
+      return value;
+    }
+
+    function jumpt(){
+      var mWebUrl = getValue('mWebUrl');
+      if(mWebUrl){
+        window.location.href = window.decodeURIComponent(mWebUrl);
+      }
+    }
+
+    jumpt();
+  </script>
+</body>
+</html>

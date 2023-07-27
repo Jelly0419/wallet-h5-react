@@ -1,0 +1,33 @@
+@mixin fbs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@mixin fbc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin fcs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@mixin fsc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin fcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin line-clamp($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}

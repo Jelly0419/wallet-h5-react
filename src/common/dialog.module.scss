@@ -1,0 +1,34 @@
+.dialogBody {
+  :global {
+    .adm-dialog-footer .adm-dialog-action-row {
+      border-top: none;
+    }
+  }
+}
+@mixin li {
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 22px !important;
+  font-weight: 500;
+  font-size: 14px !important;
+  padding: 6px !important;
+}
+.cancel {
+  @include li();
+  background-color: #f2f5f7;
+  color: #333;
+  margin: 0 6px 20px 24px;
+}
+.confirm {
+  @include li();
+  background: linear-gradient(to right, #fe2670, #fe739b);
+  color: #fff;
+  margin: 0 24px 20px 6px;
+}
+
+.content {
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 0 14px;
+}

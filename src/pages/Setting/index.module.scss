@@ -1,0 +1,45 @@
+@import '@/assets/styles/public.scss';
+.box {
+  background: linear-gradient(to bottom, #cbd7ff 10%, #f5f6fa 40%);
+  min-height: 100vh;
+  position: relative;
+  :global {
+    .top {
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+    main {
+      .list {
+        @include fbc();
+        margin: 12px 24px;
+        padding: 16px;
+        background-color: #fff;
+        border-radius: 16px;
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+        .right {
+          color: #999;
+          font-size: 14px;
+        }
+      }
+    }
+    footer {
+      padding: 24px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-sizing: border-box;
+      .button {
+        background-color: #fff;
+        padding: 16px;
+        text-align: center;
+        font-size: 14px;
+        color: #e41f1f;
+        border: 1px solid #e41f1f;
+        border-radius: 16px;
+      }
+    }
+  }
+}

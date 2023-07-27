@@ -1,0 +1,21 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.bottom {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  :global {
+    .adm-tab-bar-item {
+      color: #999;
+    }
+    .adm-tab-bar-item-active {
+      color: #333;
+    }
+  }
+}
